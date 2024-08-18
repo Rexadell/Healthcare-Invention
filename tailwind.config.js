@@ -10,8 +10,6 @@ module.exports = {
       fontFamily: {
         'inter': 'Inter'
       },
-      keyframes: {
-      }
     },
   },
   plugins: [],

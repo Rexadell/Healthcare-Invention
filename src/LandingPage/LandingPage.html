@@ -13,23 +13,33 @@
     <section class="h-screen">
         <nav class="flex justify-between px-5 md:px-10 py-4 items-center">
             <h1 class="text-xl font-bold">Logo</h1>
-            <div class="md:flex gap-12 hidden">
-                <a href="" class="font-semibold text-sm relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a>
-                <a href="" class="font-semibold text-sm relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Services</a>
-                <a href="" class="font-semibold text-sm relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Contact Us</a>
-                <a href="" class="font-semibold text-sm relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">FAQ</a>
+            <div class="lg:flex gap-12 hidden">
+                <a href="" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a>
+                <a href="" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Services</a>
+                <a href="" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Contact Us</a>
+                <a href="" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">FAQ</a>
             </div>
             <div class="flex items-center gap-3">
                 <button class="w-16 h-8 md:w-24 md:h-10 bg-primary rounded-xl hover:scale-105 transition-all duration-300 ">
                     <h1 class="text-white font-semibold md:text-sm text-xs">Login</h1>
                 </button>
-                <div id="burgermenu" class="flex relative flex-col w-5 cursor-pointer justify-between md:hidden">
-                    <div class="w-full h-1 bg-black border"></div>
-                    <div class="w-full h-1 bg-black border"></div>
-                    <div class="w-full h-1 bg-black border"></div>
-                </div>
-            </div>
-        </nav>  
+                <div id="togglemenu" class="grid place-content-center relative lg:hidden cursor-pointer">
+                    <input type="checkbox" name="toggle" id="toggle" class="hidden cursor-pointer">
+                    <label for="toggle" class="cursor-pointer">
+                        <div class="w-4 h-[3px] md:w-6 md:h-1 rounded-full bg-black relative transition-all duration-150 before:content-[''], before:absolute, before:w-16, before:h-2, before:bg-black, before:rounded-full, before:-translate-y-4">
+                            <div class="absolute w-4 md:w-6 md:h-1 h-[3px] bg-black rounded-full md:-translate-y-2 -translate-y-[6px] duration-150"></div>
+                            <div class="absolute w-4 md:w-6 md:h-1 h-[3px] bg-black rounded-full md:translate-y-2 translate-y-[6px] duration-150"></div>
+                        </div>
+                    </label>
+                    <div id="menu" class="flex-col gap-3 md:gap-10 absolute bg-white rounded-lg border shadow-lg right-0 top-5 p-10 min-w-40 hidden">                        
+                        <a href="" class="font-semibold text-xs md:text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a>
+                        <a href="" class="font-semibold text-xs md:text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Services</a>
+                        <a href="" class="font-semibold text-xs md:text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Contact Us</a>
+                        <a href="" class="font-semibold text-xs md:text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">FAQ</a>
+                    </div>
+                </div>            
+        </nav>
+          
     </section>
     <script src="LandingPage.js"></script>
 </body>
