@@ -1,4 +1,3 @@
-const togglemenu = document.querySelector('#togglemenu')
 const menu = document.querySelector('#menu')
 const toggle = document.querySelector('#toggle')
 
