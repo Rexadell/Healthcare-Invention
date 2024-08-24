@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+DK+Uloopet:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body class="font-inter">
-    <section class="h-screen">
+    <section>
         <nav class="flex justify-between px-5 md:px-10 lg:px-20 py-4 items-center shadow-sm border">
             <h1 class="text-xl font-bold">Logo</h1>
             <div class="lg:flex gap-12 hidden">
@@ -30,7 +30,7 @@
                     <label for="toggle" class="cursor-pointer">
                         <img src="/public/burgermenu.png" alt="burgermenu" class="w-5 md:w-7">
                     </label>
-                    <div id="menu" class="flex-col gap-3 md:gap-10 absolute bg-white rounded-lg border shadow-lg right-0 top-5 p-10 min-w-40 hidden">                        
+                    <div id="menu" class="flex-col gap-3 md:gap-10 absolute bg-white rounded-lg border shadow-lg right-0 top-12 md:top-14 p-10 min-w-40 hidden">                        
                         <a href="" class="font-semibold text-xs md:text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Home</a>
                         <a href="" class="font-semibold text-xs md:text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Services</a>
                         <a href="" class="font-semibold text-xs md:text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Contact Us</a>
@@ -38,28 +38,41 @@
                     </div>
                 </div>                  
         </nav>
-        <div class="h-3/4 w-full flex items-center justify-center gap-20">
-            <div class="flex flex-col gap-7">
-                <h1 class="text-4xl font-bold max-w-96">Menuju <span class="text-primary">Hidup Sehat</span> dengan Informasi Kesahatan Terdepan</h1>
-                <div class="flex gap-5">
-                    <div class="w-20 h-20 border rounded-lg cursor-pointer hover:scale-105 shadow-sm active:scale-100 transition-all duration-300 flex items-center justify-center">
-                        <img src="" alt="bmi">
+        <div class="h-3/4 w-full flex items-center justify-center gap-20 flex-col lg:flex-row p-10">
+            <img src="/public/kesehatan.svg" alt="websiteimage" width="300" class="flex lg:hidden md:w-[500px]">
+            <div class="flex flex-col gap-7 items-center">
+                <h1 class="text-2xl md:text-4xl max-w-80 font-bold md:max-w-96 lg:text-left text-center">Menuju <span class="text-primary">Hidup Sehat</span> dengan Informasi Kesehatan Terdepan</h1>
+                <div class="flex gap-3 lg:gap-5">
+                    <div class="w-16 h-16 md:w-20 md:h-20 border rounded-lg cursor-pointer hover:scale-105 shadow-sm active:scale-100 transition-all duration-300 flex items-center justify-center">
+                        <img src="/public/bmi.png" alt="bmi">
                     </div>
-                    <div class="w-20 h-20 border rounded-lg cursor-pointer hover:scale-105 shadow-sm active:scale-100 transition-all duration-300 flex items-center justify-center">
-                        <img src="" alt="bmi">
+                    <div class="w-16 h-16 md:w-20 md:h-20 border rounded-lg cursor-pointer hover:scale-105 shadow-sm active:scale-100 transition-all duration-300 flex items-center justify-center">
+                        <img src="/public/calender.png" alt="calender">
                     </div>
-                    <div class="w-20 h-20 border rounded-lg cursor-pointer hover:scale-105 shadow-sm active:scale-100 transition-all duration-300 flex items-center justify-center">
-                        <img src="" alt="bmi">
+                    <div class="w-16 h-16 md:w-20 md:h-20 border rounded-lg cursor-pointer hover:scale-105 shadow-sm active:scale-100 transition-all duration-300 flex items-center justify-center">
+                        <img src="/public/education.png" alt="education">
                     </div>
-                    <div class="w-20 h-20 border rounded-lg cursor-pointer hover:scale-105 shadow-sm active:scale-100 transition-all duration-300 flex items-center justify-center">
-                        <img src="" alt="bmi">
+                    <div class="w-16 h-16 md:w-20 md:h-20 border rounded-lg cursor-pointer hover:scale-105 shadow-sm active:scale-100 transition-all duration-300 flex items-center justify-center">
+                        <img src="/public/tips.png" alt="tipsdiet">
                     </div>
                 </div>
-                <button class="w-24 h-10 md:w-36 md:h-16 bg-primary bg-opacity-75 border-primary border-4 rounded-xl hover:scale-105 active:scale-100 transition-all duration-300">
+                <button class="w-24 h-10 md:w-36 md:h-16 bg-primary bg-opacity-70 border-primary border-4 rounded-xl hover:scale-105 active:scale-100 transition-all duration-300">
                     <h1 class="text-white font-semibold md:text-sm text-xs">Get Started</h1>
                 </button>
             </div>
-            <img src="/public/kesehatan.svg" alt="websiteimage" width="600">
+            <img src="/public/kesehatan.svg" alt="websiteimage" width="600" class="hidden lg:flex">
+        </div>
+    </section>
+    <section>
+            <div class="relative w-full max-w-3xl mx-auto overflow-hidden">
+                <div class="slides overflow-hidden rounded-xl">
+                    <img src="/public/image2.jpg" class="slide w-full h-auto transition-opacity duration-500">
+                    <img src="/public/image1.jpg" class="slide w-full h-auto transition-opacity duration-500">
+                    <img src="/public/image3.jpg" class="slide w-full h-auto transition-opacity duration-500">
+                </div>
+                <button class="prev w-10 h-10 absolute top-1/2 left-3 transform -translate-y-1/2 bg-primary bg-opacity-70 p-2 rounded-full text-white ring-2 ring-white">❮</button>
+                <button class="next w-10 h-10 absolute top-1/2 right-3 transform -translate-y-1/2 bg-primary bg-opacity-70 p-2 rounded-full text-white ring-2 ring-white">❯</button>
+            </div>
         </div>
     </section>
     <script src="LandingPage.js"></script>
