@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+DK+Uloopet:wght@100..400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-inter">
     <nav class="flex justify-between px-5 md:px-10 py-4 items-center shadow-sm border">
         <h1 class="text-xl font-bold">Logo</h1>
         <div class="lg:flex gap-12 hidden">
@@ -45,14 +48,14 @@
                     <input type="text" class="w-full outline-none text-sm" placeholder="Search">
                 </div>
             </div>
-            <div>
-                <h3 class="">Terpopuler</h3>
-                <div>
-                    <img src="" alt="">
-                    <h3>Artikel Terpopuler Lorem, ipsum dolor.</h3>
+            <div class="relative">
+                <h3 class="text-3xl font-bold">Terpopuler</h3>
+                <div class="relative">
+                    <img src="/public/artikel.jpg" alt="artikel">
+                    <h3 class="absolute">Ini Artikel Terpopuler</h3>
                 </div>
             </div>
-            <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-3">
                 <div class="flex border rounded-lg py-5 px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
                     <img src="/public/dummy.jpg" alt="dummy" width="200">
                     <div class="flex flex-col gap-10">

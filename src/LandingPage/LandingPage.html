@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+DK+Uloopet:wght@100..400&display=swap" rel="stylesheet">
 </head>
-<body class="font-inter" class="p-20">
+<body class="font-inter">
     <section id="home">
         <nav class="flex justify-between px-5 md:px-10 py-4 items-center shadow-sm border">
             <h1 class="text-xl font-bold">Logo</h1>
@@ -42,7 +42,7 @@
         </nav>
         <div class="h-3/4 w-full flex items-center justify-center lg:justify-between gap-20 flex-col lg:flex-row py-10 px-32">
             <img src="/public/kesehatan.svg" alt="websiteimage" width="300" class="flex lg:hidden md:w-[500px]">
-            <div class="flex flex-col gap-5 ">
+            <div class="flex flex-col gap-5">
                 <div class="flex flex-col gap-3 items-center lg:items-start">
                     <h1 class="text-2xl md:text-5xl max-w-80 font-bold md:max-w-xl lg:text-left text-center">Menuju <span class="text-primary">Hidup Sehat</span> dengan Informasi Kesehatan Terdepan</h1>
                     <h3 class="text-lg text-slate-700 max-w-sm text-center lg:text-left">Sumber Informasi Kesehatan Terpercaya dan Terkini untuk Anda. Hidup sehat mulai dari sekarang!</h3>
@@ -54,7 +54,7 @@
             <img src="/public/kesehatan.svg" alt="websiteimage" width="600" class="hidden lg:flex">
         </div>
     </section>
-    <section class="bg-primary text-white h-3/4 mt-10 p-20 flex items-center justify-center">
+    <section class="bg-primary text-white h-3/4 mt-10 p-32 flex items-center justify-center">
         <div class="max-w-lg flex flex-col gap-1">
             <h2 class="text-4xl font-bold">Tentang Kami</h2>
             <p class="text-lg text-justify">Nama website adalah sumber terpercaya untuk informasi kesehatan yang akurat dan terkini. Kami akan membantu Anda mencapai hidup uang sehat dengan informasi yang relevan dan dapat dipercaya. Website ini di desain oleh tim developer Wedes.</p>
@@ -91,6 +91,20 @@
                     </div>
                 </div>
             </div>
+    </section>
+    <section class="px-32">
+        <div class="flex">
+            <div class="border max-w-72 rounded-xl overflow-hidden flex flex-col gap-3 pb-5">
+                <img src="/public/artikel2.png" alt="dummy" class="object-center w-full h-40">
+                <div class="p-3 flex flex-col gap-5">
+                    <div>
+                        <h4 class="text-2xl font-bold">Ini Artikel</h4> 
+                        <p class="text-sm text-slate-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <button class="bg-primary w-32 h-10 text-white font-semibold text-sm rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="contact">
         <div class="flex justify-center p-20">
