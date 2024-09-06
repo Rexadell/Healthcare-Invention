@@ -41,101 +41,127 @@
         </div>                  
     </nav>
     <section>
-        <div class="flex flex-col gap-5 px-20">
+        <div class="flex flex-col gap-5 px-5 md:px-20">
             <div class="pt-10 flex flex-col items-center w-full">
-                <div class="border rounded-full py-2 px-5 flex w-[40%] gap-3">
+                <div class="border rounded-full py-2 px-5 flex w-full md:w-[40%] gap-3">
                     <img src="/public/search.png" alt="search" class="w-5 h-5">
                     <input type="text" class="w-full outline-none text-sm" placeholder="Search">
                 </div>
             </div>
-            <div class="relative">
-                <h3 class="text-3xl font-bold">Terpopuler</h3>
-                <div class="relative">
-                    <img src="/public/artikel.jpg" alt="artikel">
-                    <h3 class="absolute">Ini Artikel Terpopuler</h3>
+            <div class="flex gap-2">
+                <div class="border-2 rounded-xl py-1 px-2 w-fit border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition duration-300 text-sm">
+                    <h4>Terbaru</h4>
+                </div>
+                <div class="border-2 rounded-xl py-1 px-2 w-fit border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition duration-300 text-sm">
+                    <h4>Terpopuler</h4>
+                </div>
+                <div class="border-2 rounded-xl py-1 px-2 w-fit border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition duration-300 text-sm">
+                    <h4>Lainnya</h4>
                 </div>
             </div>
             <div class="flex flex-col gap-3">
-                <div class="flex border rounded-lg py-5 px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
-                    <img src="/public/dummy.jpg" alt="dummy" width="200">
+                <div class="flex border rounded-lg py-3 px-5 md:py-5 md:px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
+                    <img src="/public/artikel2.png" alt="dummy" class="w-40 md:w-60">
                     <div class="flex flex-col gap-10">
                         <div>
-                            <h4 class="text-2xl font-bold ">Ini Artikel</h4>
-                            <p class="text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dicta ipsa distinctio beatae reiciendis expedita! Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.
+                            <h4 class="md:text-2xl font-bold text-lg">Ini Artikel</h4>
+                            <p class="md:text-sm text-xs text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="hidden md:flex">Quia, dicta ipsa distinctio beatae reiciendis expedita! <span class="hidden lg:flex">Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.</span></span> 
                             </p>
                         </div>
-                        <button class="bg-primary w-40 h-10 text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
+                        <button class="hidden md:flex bg-primary w-32 h-8 md:text-sm lg:w-40 lg:h-10 justify-center items-center text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
                     </div>
                 </div>
-                <div class="flex border rounded-lg py-5 px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
-                    <img src="/public/dummy.jpg" alt="dummy" width="200">
+                <div class="flex border rounded-lg py-3 px-5 md:py-5 md:px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
+                    <img src="/public/artikel2.png" alt="dummy" class="w-40 md:w-60">
                     <div class="flex flex-col gap-10">
                         <div>
-                            <h4 class="text-2xl font-bold ">Ini Artikel</h4>
-                            <p class="text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dicta ipsa distinctio beatae reiciendis expedita! Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.
+                            <h4 class="md:text-2xl font-bold text-lg">Ini Artikel</h4>
+                            <p class="md:text-sm text-xs text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="hidden md:flex">Quia, dicta ipsa distinctio beatae reiciendis expedita! <span class="hidden lg:flex">Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.</span></span> 
                             </p>
                         </div>
-                        <button class="bg-primary w-40 h-10 text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
+                        <button class="hidden md:flex bg-primary w-32 h-8 md:text-sm lg:w-40 lg:h-10 justify-center items-center text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
                     </div>
                 </div>
-                <div class="flex border rounded-lg py-5 px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
-                    <img src="/public/dummy.jpg" alt="dummy" width="200">
+                <div class="flex border rounded-lg py-3 px-5 md:py-5 md:px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
+                    <img src="/public/artikel2.png" alt="dummy" class="w-40 md:w-60">
                     <div class="flex flex-col gap-10">
                         <div>
-                            <h4 class="text-2xl font-bold ">Ini Artikel</h4>
-                            <p class="text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dicta ipsa distinctio beatae reiciendis expedita! Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.
+                            <h4 class="md:text-2xl font-bold text-lg">Ini Artikel</h4>
+                            <p class="md:text-sm text-xs text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="hidden md:flex">Quia, dicta ipsa distinctio beatae reiciendis expedita! <span class="hidden lg:flex">Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.</span></span> 
                             </p>
                         </div>
-                        <button class="bg-primary w-40 h-10 text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
+                        <button class="hidden md:flex bg-primary w-32 h-8 md:text-sm lg:w-40 lg:h-10 justify-center items-center text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
                     </div>
                 </div>
-                <div class="flex border rounded-lg py-5 px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
-                    <img src="/public/dummy.jpg" alt="dummy" width="200">
+                <div class="flex border rounded-lg py-3 px-5 md:py-5 md:px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
+                    <img src="/public/artikel2.png" alt="dummy" class="w-40 md:w-60">
                     <div class="flex flex-col gap-10">
                         <div>
-                            <h4 class="text-2xl font-bold ">Ini Artikel</h4>
-                            <p class="text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dicta ipsa distinctio beatae reiciendis expedita! Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.
+                            <h4 class="md:text-2xl font-bold text-lg">Ini Artikel</h4>
+                            <p class="md:text-sm text-xs text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="hidden md:flex">Quia, dicta ipsa distinctio beatae reiciendis expedita! <span class="hidden lg:flex">Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.</span></span> 
                             </p>
                         </div>
-                        <button class="bg-primary w-40 h-10 text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
+                        <button class="hidden md:flex bg-primary w-32 h-8 md:text-sm lg:w-40 lg:h-10 justify-center items-center text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
                     </div>
                 </div>
-                <div class="flex border rounded-lg py-5 px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
-                    <img src="/public/dummy.jpg" alt="dummy" width="200">
+                <div class="flex border rounded-lg py-3 px-5 md:py-5 md:px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
+                    <img src="/public/artikel2.png" alt="dummy" class="w-40 md:w-60">
                     <div class="flex flex-col gap-10">
                         <div>
-                            <h4 class="text-2xl font-bold ">Ini Artikel</h4>
-                            <p class="text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dicta ipsa distinctio beatae reiciendis expedita! Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.
+                            <h4 class="md:text-2xl font-bold text-lg">Ini Artikel</h4>
+                            <p class="md:text-sm text-xs text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="hidden md:flex">Quia, dicta ipsa distinctio beatae reiciendis expedita! <span class="hidden lg:flex">Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.</span></span> 
                             </p>
                         </div>
-                        <button class="bg-primary w-40 h-10 text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
+                        <button class="hidden md:flex bg-primary w-32 h-8 md:text-sm lg:w-40 lg:h-10 justify-center items-center text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
                     </div>
                 </div>
-                <div class="flex border rounded-lg py-5 px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
-                    <img src="/public/dummy.jpg" alt="dummy" width="200">
+                <div class="flex border rounded-lg py-3 px-5 md:py-5 md:px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
+                    <img src="/public/artikel2.png" alt="dummy" class="w-40 md:w-60">
                     <div class="flex flex-col gap-10">
                         <div>
-                            <h4 class="text-2xl font-bold ">Ini Artikel</h4>
-                            <p class="text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dicta ipsa distinctio beatae reiciendis expedita! Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.
+                            <h4 class="md:text-2xl font-bold text-lg">Ini Artikel</h4>
+                            <p class="md:text-sm text-xs text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="hidden md:flex">Quia, dicta ipsa distinctio beatae reiciendis expedita! <span class="hidden lg:flex">Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.</span></span> 
                             </p>
                         </div>
-                        <button class="bg-primary w-40 h-10 text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
+                        <button class="hidden md:flex bg-primary w-32 h-8 md:text-sm lg:w-40 lg:h-10 justify-center items-center text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
                     </div>
                 </div>
-                <div class="flex border rounded-lg py-5 px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
-                    <img src="/public/dummy.jpg" alt="dummy" width="200">
+                <div class="flex border rounded-lg py-3 px-5 md:py-5 md:px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
+                    <img src="/public/artikel2.png" alt="dummy" class="w-40 md:w-60">
                     <div class="flex flex-col gap-10">
                         <div>
-                            <h4 class="text-2xl font-bold ">Ini Artikel</h4>
-                            <p class="text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dicta ipsa distinctio beatae reiciendis expedita! Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.
+                            <h4 class="md:text-2xl font-bold text-lg">Ini Artikel</h4>
+                            <p class="md:text-sm text-xs text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="hidden md:flex">Quia, dicta ipsa distinctio beatae reiciendis expedita! <span class="hidden lg:flex">Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.</span></span> 
                             </p>
                         </div>
-                        <button class="bg-primary w-40 h-10 text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
+                        <button class="hidden md:flex bg-primary w-32 h-8 md:text-sm lg:w-40 lg:h-10 justify-center items-center text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
                     </div>
                 </div>
-            </div>
-            <div class="flex justify-center pt-5">
-                <button class="font-semibold text-primary border-2 rounded-xl w-fit border-primary py-2 px-5 flex items-center hover:bg-primary hover:text-white transition duration-300 active:scale-95">Selengkapnya</button>
+                <div class="flex border rounded-lg py-3 px-5 md:py-5 md:px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
+                    <img src="/public/artikel2.png" alt="dummy" class="w-40 md:w-60">
+                    <div class="flex flex-col gap-10">
+                        <div>
+                            <h4 class="md:text-2xl font-bold text-lg">Ini Artikel</h4>
+                            <p class="md:text-sm text-xs text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="hidden md:flex">Quia, dicta ipsa distinctio beatae reiciendis expedita! <span class="hidden lg:flex">Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.</span></span> 
+                            </p>
+                        </div>
+                        <button class="hidden md:flex bg-primary w-32 h-8 md:text-sm lg:w-40 lg:h-10 justify-center items-center text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
+                    </div>
+                </div>
+                <div class="flex border rounded-lg py-3 px-5 md:py-5 md:px-10 gap-7 hover:shadow-lg hover:border-primary hover:scale-105 active:scale-100 cursor-pointer transition duration-300">
+                    <img src="/public/artikel2.png" alt="dummy" class="w-40 md:w-60">
+                    <div class="flex flex-col gap-10">
+                        <div>
+                            <h4 class="md:text-2xl font-bold text-lg">Ini Artikel</h4>
+                            <p class="md:text-sm text-xs text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="hidden md:flex">Quia, dicta ipsa distinctio beatae reiciendis expedita! <span class="hidden lg:flex">Laboriosam architecto dicta sit voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat, quod voluptatibus incidunt aliquam nesciunt consequuntur fugit atque reiciendis libero aut delectus similique culpa minima corporis id ad vitae commodi quisquam, architecto ipsam? Minima doloribus doloremque magni velit ea voluptatum.</span></span> 
+                            </p>
+                        </div>
+                        <button class="hidden md:flex bg-primary w-32 h-8 md:text-sm lg:w-40 lg:h-10 justify-center items-center text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
+                    </div>
+                </div>
+                <div class="flex justify-center pt-5">
+                    <button class="font-semibold text-primary border-2 rounded-xl w-fit border-primary text-sm md:text-base py-2 px-5 flex items-center hover:bg-primary hover:text-white transition duration-300 active:scale-95">Selengkapnya</button>
+                </div>
             </div>
         </div>
     </section>
