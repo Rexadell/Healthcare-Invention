@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebSehat - Artikel</title>
+    <link rel="icon" href="/public/titlelogo.png">
     <link rel="stylesheet" href="/src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,13 +12,13 @@
 </head>
 <body class="font-inter">
     <nav class="flex justify-between px-5 md:px-10 py-4 items-center shadow-sm border">
-        <h1 class="text-xl font-bold">Logo</h1>
+        <img src="/public/logo.png" alt="logo" width="100">
         <div class="lg:flex gap-12 hidden">
             <a href="/src/LandingPage/LandingPage.html" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Beranda</a>
-            <a href="#services" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Tentang Kami</a>
-            <a href="#contact" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Layanan</a>
-            <a href="#faq" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Artikel</a>
-            <a href="#faq" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Kontak</a>
+            <a href="#about" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Tentang Kami</a>
+            <a href="#services" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Layanan</a>
+            <a href="#" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Artikel</a>
+            <a href="#contact" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Kontak</a>
         </div>
         <div class="flex items-center gap-3">
             <a href="/src/LoginPage/LoginPage.html">
@@ -25,20 +26,20 @@
                     <h1 class="text-white font-semibold md:text-sm text-xs">Login</h1>
                 </button>
             </a>
-        </div>
-        <div id="togglemenu" class="grid place-content-center relative lg:hidden cursor-pointer">
-            <input type="checkbox" name="toggle" id="toggle" class="hidden cursor-pointer">
-            <label for="toggle" class="cursor-pointer">
-                <img src="/public/burgermenu.png" alt="burgermenu" class="w-5 md:w-7">
-            </label>
-            <div id="menu" class="flex-col gap-3 md:gap-10 absolute bg-white rounded-lg border shadow-lg right-0 top-12 md:top-14 p-10 min-w-40 hidden">                        
-                <a href="/src/LandingPage/LandingPage.html" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Beranda</a>
-                <a href="#services" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Tentang Kami</a>
-                <a href="#contact" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Layanan</a>
-                <a href="#" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Artikel</a>
-                <a href="#faq" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Kontak</a>
-            </div>
-        </div>                  
+            <div id="togglemenu" class="grid place-content-center relative lg:hidden cursor-pointer">
+                <input type="checkbox" name="toggle" id="toggle" class="hidden cursor-pointer">
+                <label for="toggle" class="cursor-pointer">
+                    <img src="/public/burgermenu.png" alt="burgermenu" class="w-5 md:w-7">
+                </label>
+                <div id="menu" class="flex-col gap-3 md:gap-10 absolute bg-white rounded-lg border shadow-lg right-0 top-12 md:top-14 p-10 min-w-40 hidden">                        
+                    <a href="/src/LandingPage/LandingPage.html" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Beranda</a>
+                    <a href="#services" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Tentang Kami</a>
+                    <a href="#contact" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Layanan</a>
+                    <a href="#" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Artikel</a>
+                    <a href="#faq" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Kontak</a>
+                </div>
+            </div>  
+        </div>              
     </nav>
     <section>
         <div class="flex flex-col gap-5 px-5 md:px-20">
@@ -48,6 +49,7 @@
                     <input type="text" class="w-full outline-none text-sm" placeholder="Search">
                 </div>
             </div>
+            <h1 class="text-2xl md:text-4xl font-bold">Yuk, Baca Artikel dari Kami</h1>
             <div class="flex gap-2">
                 <div class="border-2 rounded-xl py-1 px-2 w-fit border-primary text-primary cursor-pointer hover:bg-primary hover:text-white transition duration-300 text-sm">
                     <h4>Terbaru</h4>
@@ -159,33 +161,35 @@
                         <button class="hidden md:flex bg-primary w-32 h-8 md:text-sm lg:w-40 lg:h-10 justify-center items-center text-white font-semibold rounded-xl hover:scale-105 active:scale-100 transition duration-300">Baca Artikel</button>
                     </div>
                 </div>
-                <div class="flex justify-center pt-5">
+                <div class="flex justify-center pt-5 mb-10">
                     <button class="font-semibold text-primary border-2 rounded-xl w-fit border-primary text-sm md:text-base py-2 px-5 flex items-center hover:bg-primary hover:text-white transition duration-300 active:scale-95">Selengkapnya</button>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="bg-primary text-white pb-5 mt-10 p-10 text-sm flex flex-col gap-5">
-        <div>
+    <footer class="bg-primary text-white pb-5 p-10 text-sm flex flex-col gap-5">
+        <div class="flex justify-between">
+            <img src="/public/aboutlogo.png" alt="logo" width="50">
             <div class="flex gap-2 justify-end">
-                <a href="">    
+                <a href="#">    
                     <img src="/public/instagram.png" alt="instagram" width="20"> 
                 </a>
-                <a href="">
+                <a href="#">
                     <img src="/public/facebook.png" alt="facebook" width="20">
                 </a>
-                <a href="">
+                <a href="#">
                     <img src="/public/linkedin.png" alt="linkedin" width="20">
                 </a>
             </div>
         </div>
         <div class="flex flex-col gap-3">
-            <a href="">Home</a>
-            <a href="">Service</a>
-            <a href="">Contact Us</a>
-            <a href="">FAQ</a>
+            <a href="" class="text-xs md:text-base">Beranda</a>
+            <a href="" class="text-xs md:text-base">Tentang Kami</a>
+            <a href="" class="text-xs md:text-base">Layanan</a>
+            <a href="" class="text-xs md:text-base">Artikel</a>
+            <a href="" class="text-xs md:text-base">Kontak</a>
         </div>
-        <div class="flex items-center justify-center">
+        <div class="flex text-xs md:text-base items-center justify-center">
             <h4>&copy;2024 WEB DESIGN SMANIKA, All right reserved.</h4>
         </div>
     </footer>
