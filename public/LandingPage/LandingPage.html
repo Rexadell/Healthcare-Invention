@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebSehat - Home</title>
-    <link rel="icon" href="/public/titlelogo.png">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="icon" href="/src/titlelogo.png">
+    <link rel="stylesheet" href="/public/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+DK+Uloopet:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body class="font-inter">
     <nav class="flex justify-between px-5 md:px-10 py-4 items-center shadow-sm border">
-        <img src="/public/logo.png" alt="logo" width="100">
+        <img src="/src/logo.png" alt="logo" width="100">
         <div class="lg:flex gap-12 hidden">
             <a href="#home" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Beranda</a>
             <a href="#about" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Tentang Kami</a>
             <a href="#services" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Layanan</a>
-            <a href="/src/ArtikelPage/artikel.html" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Artikel</a>
+            <a href="/public/ArtikelPage/artikel.html" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Artikel</a>
             <a href="#contact" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Kontak</a>
         </div>
         <div class="flex items-center gap-3">
-            <a href="/src/LoginPage/LoginPage.html">
+            <a href="/public/LoginPage/LoginPage.html">
                 <button class="w-16 h-8 md:w-24 md:h-10 bg-primary rounded-xl hover:scale-105 active:scale-100 transition-all duration-300 ">
                     <h1 class="text-white font-semibold md:text-sm text-xs">Login</h1>
                 </button>
@@ -29,13 +29,13 @@
             <div id="togglemenu" class="grid place-content-center relative lg:hidden cursor-pointer">
                 <input type="checkbox" name="toggle" id="toggle" class="hidden cursor-pointer">
                 <label for="toggle" class="cursor-pointer">
-                    <img src="/public/burgermenu.png" alt="burgermenu" class="w-5 md:w-7">
+                    <img src="/src/burgermenu.png" alt="burgermenu" class="w-5 md:w-7">
                 </label>
                 <div id="menu" class="flex-col gap-3 md:gap-10 absolute bg-white rounded-lg border shadow-lg right-0 top-12 md:top-14 p-10 min-w-40 hidden">                        
                     <a href="#home" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Beranda</a>
                     <a href="#services" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Tentang Kami</a>
                     <a href="#contact" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Layanan</a>
-                    <a href="/src/ArtikelPage/artikel.html" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Artikel</a>
+                    <a href="/public/ArtikelPage/artikel.html" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Artikel</a>
                     <a href="#faq" class="font-semibold text-sm text-slate-800 relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Kontak</a>
                 </div>
             </div>  
@@ -43,7 +43,7 @@
     </nav>
     <section id="home" class="lg:h-screen flex items-center">
         <div class="w-full flex justify-center items-center lg:justify-between flex-col lg:flex-row px-10 md:px-20 lg:pl-32">
-            <img src="/public/landingimage.png" alt="websiteimage" width="500" class="flex lg:hidden md:w-[500px]">
+            <img src="/src/landingimage.png" alt="websiteimage" width="500" class="flex lg:hidden md:w-[500px]">
             <div class="flex">
                 <div class="flex flex-col gap-3 items-center lg:items-start justify-center">
                     <h1 class="text-2xl md:text-5xl lg:text-6xl max-w-80 font-bold md:max-w-xl lg:text-left text-center">Menuju <span class="text-primary">Hidup Sehat</span> dengan Informasi Kesehatan Terdepan</h1>
@@ -53,7 +53,7 @@
                     </button>
                 </div>
             </div>
-            <img src="/public/landingimage.png" alt="websiteimage" width="700" class="hidden lg:flex">
+            <img src="/src/landingimage.png" alt="websiteimage" width="700" class="hidden lg:flex">
         </div>
     </section>
     <section id="about" class="bg-primary text-white h-3/4 mt-10 p-10 md:p-20 lg:p-32 flex items-center justify-center gap-5">
@@ -61,7 +61,7 @@
             <h2 class="lg:text-4xl font-bold md:text-3xl text-2xl">Tentang Kami</h2>
             <p class="md:text-lg text-justify text-sm">WebSehat adalah sumber terpercaya untuk informasi kesehatan yang akurat dan terkini. Kami akan membantu Anda mencapai hidup uang sehat dengan informasi yang relevan dan dapat dipercaya. Website ini di desain oleh tim developer Wedes.</p>
         </div>
-        <img src="/public/aboutlogo.png" alt="logo" width="500" class="hidden lg:flex">
+        <img src="/src/aboutlogo.png" alt="logo" width="500" class="hidden lg:flex">
     </section>
     <section id="services">
             <div class="flex flex-col items-center gap-5 mt-10 justify-center px-10 md:px-20 lg:px-32">
@@ -69,28 +69,28 @@
                 <div class="flex flex-col gap-3 lg:gap-5">
                     <a href="https://www.truthaboutweight.global/global/en/managing-your-weight/whats-your-body-mass-index-bmi.html?cid=pse-jwalvi5kc2&gad_source=1&gclid=Cj0KCQjwiuC2BhDSARIsALOVfBL6GiYuJLOlhB-t3aDPJngifhsrsWfSzKr_D5rnGffR5VXeMbG4Ew0aAho1EALw_wcB">
                         <div class="flex flex-col justify-center bg-white border border-primary rounded-xl items-center gap-2 p-5 h-60 max-w-sm cursor-pointer hover:scale-105 hover:shadow-lg active:scale-100 transition duration-300">
-                                <img src="/public/bmi.png" alt="bmi" class="w-12">
+                                <img src="/src/bmi.png" alt="bmi" class="w-12">
                             <label class="text-xl md:text-2xl text-center font-bold">Kalkulator BMI</label>
                             <p class="text-slate-700 text-center text-sm">Kalkulator BMI (Body Mass Index) adalah fitur untuk mengukur berat badan ideal seseorang.</p>
                         </div>
                     </a>
                     <div class="flex flex-col justify-center bg-white border border-primary rounded-xl items-center gap-2 p-5 h-60 max-w-sm cursor-pointer hover:scale-105 hover:shadow-lg active:scale-100 transition duration-300">
                         <a href="#">
-                            <img src="/public/calender.png" alt="calender" class="w-12">
+                            <img src="/src/calender.png" alt="calender" class="w-12">
                         </a>
                         <label class="text-xl md:text-2xl text-center font-bold">Kalender Menstruasi</label>
                         <p class="text-slate-700 text-center text-sm">Kalender Menstruasi adalah fitur untuk mengontrol siklus menstruasi wanita dengan memberikan tanda kapan siklus menstruasi terakhir terjadi.</p>
                     </div>
                     <div class="flex flex-col justify-center bg-white border border-primary rounded-xl items-center gap-2 p-5 h-60 max-w-sm cursor-pointer hover:scale-105 hover:shadow-lg active:scale-100 transition duration-300">
                         <a href="#">
-                            <img src="/public/education.png" alt="education" class="w-12">
+                            <img src="/src/education.png" alt="education" class="w-12">
                         </a>
                         <label class="text-xl md:text-2xl text-center font-bold">Edukasi Kesehatan</label>
                         <p class="text-slate-700 text-center text-sm">Edukasi Kesehatan adalah fitur yang memberikan pengetahuan dan edukasi kepada masyarakat betapa pentingnya menjaga kesehatan saat ini.</p>
                     </div>
                     <div class="flex flex-col justify-center bg-white border border-primary rounded-xl items-center gap-2 p-5 h-60 max-w-sm cursor-pointer hover:scale-105 hover:shadow-lg active:scale-100 transition duration-300">
                         <a href="#">
-                            <img src="/public/tips.png" alt="tips" class="w-12">
+                            <img src="/src/tips.png" alt="tips" class="w-12">
                         </a>
                         <label class="text-xl md:text-2xl text-center font-bold">Tips Diet</label>
                         <p class="text-slate-700 text-center text-sm">Tips Diet adalah fitur yang memberikan tips diet untuk user, mulai dari makanan sehat, olahraga dan pengaturan waktu konsisten olahraga.</p>
@@ -116,7 +116,7 @@
             </div>
             <div class="flex gap-3">
                 <div class="border border-primary min-w-48 md:min-w-52 lg:min-w-60 rounded-xl overflow-hidden flex flex-col gap-2 md:gap-3 pb-5 cursor-pointer hover:scale-105 active:scale-100 hover:shadow-lg transition duration-300">
-                    <img src="/public/artikel2.png" alt="dummy" class="object-center w-full h-40 sm:h-20 md:h-40">
+                    <img src="/src/artikel2.png" alt="dummy" class="object-center w-full h-40 sm:h-20 md:h-40">
                     <div class="p-3 flex flex-col gap-5">
                         <div>
                             <h4 class="text-lg sm:text-xl md:text-2xl font-bold">Ini Artikel</h4>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
                 <div class="hidden border border-primary min-w-48 md:min-w-52 lg:min-w-60 rounded-xl overflow-hidden md:flex flex-col gap-2 md:gap-3 pb-5 cursor-pointer hover:scale-105 active:scale-100 hover:shadow-lg transition duration-300">
-                    <img src="/public/artikel2.png" alt="dummy" class="object-center w-full h-40 sm:h-20 md:h-40">
+                    <img src="/src/artikel2.png" alt="dummy" class="object-center w-full h-40 sm:h-20 md:h-40">
                     <div class="p-3 flex flex-col gap-5">
                         <div>
                             <h4 class="text-lg sm:text-xl md:text-2xl font-bold">Ini Artikel</h4>
@@ -136,7 +136,7 @@
                     </div>
                 </div>
                 <div class="hidden border border-primary min-w-48 md:min-w-52 lg:min-w-60 rounded-xl overflow-hidden md:flex flex-col gap-2 md:gap-3 pb-5 cursor-pointer hover:scale-105 active:scale-100 hover:shadow-lg transition duration-300">
-                    <img src="/public/artikel2.png" alt="dummy" class="object-center w-full h-40 sm:h-20 md:h-40">
+                    <img src="/src/artikel2.png" alt="dummy" class="object-center w-full h-40 sm:h-20 md:h-40">
                     <div class="p-3 flex flex-col gap-5">
                         <div>
                             <h4 class="text-lg sm:text-xl md:text-2xl font-bold">Ini Artikel</h4>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
                 <div class="hidden border border-primary min-w-48 md:min-w-52 lg:min-w-60 rounded-xl overflow-hidden lg:flex flex-col gap-2 md:gap-3 pb-5 cursor-pointer hover:scale-105 active:scale-100 hover:shadow-lg transition duration-300">
-                    <img src="/public/artikel2.png" alt="dummy" class="object-center w-full h-40 sm:h-20 md:h-40">
+                    <img src="/src/artikel2.png" alt="dummy" class="object-center w-full h-40 sm:h-20 md:h-40">
                     <div class="p-3 flex flex-col gap-5">
                         <div>
                             <h4 class="text-lg sm:text-xl md:text-2xl font-bold">Ini Artikel</h4>
@@ -156,7 +156,7 @@
                     </div>
                 </div>
                 <div class="hidden border border-primary min-w-48 md:min-w-52 lg:min-w-60 rounded-xl overflow-hidden lg:flex flex-col gap-2 md:gap-3 pb-5 cursor-pointer hover:scale-105 active:scale-100 hover:shadow-lg transition duration-300">
-                    <img src="/public/artikel2.png" alt="dummy" class="object-center w-full h-40 sm:h-20 md:h-40">
+                    <img src="/src/artikel2.png" alt="dummy" class="object-center w-full h-40 sm:h-20 md:h-40">
                     <div class="p-3 flex flex-col gap-5">
                         <div>
                             <h4 class="text-lg sm:text-xl md:text-2xl font-bold">Ini Artikel</h4>
@@ -174,15 +174,15 @@
                 <div class="flex flex-col gap-5 md:p-10 lg:w-1/2">
                     <h2 class="font-semibold text-2xl text-primary">Contact Us</h2>
                     <div class="flex gap-2 items-center border-b border-primary p-1 w-full">
-                        <img src="/public/user.png" alt="nama" class="w-5 h-5">
+                        <img src="/src/user.png" alt="nama" class="w-5 h-5">
                         <input type="text" class="outline-none text-sm w-full" placeholder="Nama Lengkap">
                     </div>
                     <div class="flex gap-2 items-center border-b border-primary p-1 w-full">
-                        <img src="/public/email.png" alt="email" class="w-5 h-5">
+                        <img src="/src/email.png" alt="email" class="w-5 h-5">
                         <input type="email" class="outline-none text-sm w-full" placeholder="Email">
                     </div>
                     <div class="flex gap-2 items-center border-b border-primary p-1 w-full">
-                        <img src="/public/phone-call.png" alt="nomor" class="w-5 h-5">
+                        <img src="/src/phone-call.png" alt="nomor" class="w-5 h-5">
                         <input type="number" class="outline-none text-sm no-spinner w-full" placeholder="Nomor Telepon">
                     </div>
                     <div class="flex flex-col">
@@ -191,22 +191,22 @@
                     </div>
                     <button class="bg-primary rounded-xl text-white hover:bg-hover font-semibold text-sm h-10">Submit</button>
                 </div>
-                <img src="/public/figure.png" alt="image" class="bg-cover hidden md:flex md:w-72 lg:w-[500px]">
+                <img src="/src/figure.png" alt="image" class="bg-cover hidden md:flex md:w-72 lg:w-[500px]">
             </form>
         </div>
     </section>
     <footer class="bg-primary text-white pb-5 p-10 text-sm flex flex-col gap-5">
         <div class="flex justify-between">
-            <img src="/public/aboutlogo.png" alt="logo" width="50">
+            <img src="/src/aboutlogo.png" alt="logo" width="50">
             <div class="flex gap-2 justify-end">
                 <a href="#">    
-                    <img src="/public/instagram.png" alt="instagram" width="20"> 
+                    <img src="/src/instagram.png" alt="instagram" width="20"> 
                 </a>
                 <a href="#">
-                    <img src="/public/facebook.png" alt="facebook" width="20">
+                    <img src="/src/facebook.png" alt="facebook" width="20">
                 </a>
                 <a href="#">
-                    <img src="/public/linkedin.png" alt="linkedin" width="20">
+                    <img src="/src/linkedin.png" alt="linkedin" width="20">
                 </a>
             </div>
         </div>
